@@ -1,0 +1,43 @@
+.simple
+	padding: 100px 0
+	background-color: $reds
+	color: #fff
+	&_title
+		font-size: 30px
+		letter-spacing: 1px
+		margin-bottom: 30px
+		text-transform: uppercase
+	&_text
+		font-weight: 300
+		font-size: 16px
+		line-height: 1.6
+	&_btn
+		background-color: rgba(#000, 0.3)
+		text-transform: uppercase
+		font-size: 12px
+		color: #fff
+		border: none
+		width: 150px
+		text-align: center
+		padding: 20px
+		border-radius: 30px
+		letter-spacing: 1px
+		cursor: pointer
+		transition: color 0.3s
+		&:hover
+			color: $yellows
+
+@media (max-width: 991.98px)
+	.simple
+		padding: 80px 0
+
+@media (max-width: 575.98px)
+	.simple
+		padding: 55px 0
+		text-align: center
+		&_title
+			margin-bottom: 15px
+			font-size: 24px
+		&_text
+			font-size: 14px
+			margin-bottom: 20px

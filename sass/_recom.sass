@@ -1,0 +1,180 @@
+.recom
+	padding-bottom: 100px
+	&_select
+		display: none
+		&_log
+			background-color: $yellows
+		&_active
+			display: block
+	&_bg
+		background-color: $reds
+	&_elem
+		border: 1px solid transparent
+		&_active
+			border: 1px solid $yellows
+			margin-bottom: 20px
+	&_text
+		padding: 20px
+		display: none
+		&_active
+			display: block
+	&_name
+		font-size: 16px
+		letter-spacing: 1px
+		margin-bottom: 20px
+	&_list
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			padding-left: 20px
+			position: relative
+			margin-bottom: 10px
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				border: 6px solid transparent
+				border-left: 8px solid $yellows
+				
+	&_tabs
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: flex
+		li
+			background-color: $reds
+			padding: 20px 0
+			text-align: center
+			font-weight: 900
+			color: #fff
+			flex-basis: 50%
+			cursor: pointer
+			text-transform: uppercase
+			font-size: 14px
+			letter-spacing: 3px
+			&:last-child
+				background-color: $yellows
+				color: $reds
+				box-shadow: 0 3px 8px $yellows
+	&_select
+		padding: 40px
+		background-color: $reds
+		color: #fff
+		height: 100%
+	&_option
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+
+		&_active
+			background-color: $yellows
+			margin-bottom: 0
+		input.active
+			color: $reds
+			font-weight: 900
+			border: none
+		a.active
+			border: none
+			border-left: 1px solid $reds
+			i
+				color: $reds
+		&:last-child
+			margin-bottom: 0
+		input
+			width: 100%
+			outline: none
+			height: 45px
+			color: #fff
+			text-transform: uppercase
+			padding-left: 20px
+			font-weight: 300
+			z-index: 14
+			letter-spacing: 0.48px
+			border: 1px solid #fff
+			background-color: transparent
+		a
+			height: 45px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fff
+			font-size: 14px
+			border: 1px solid #fff
+			width: 50px
+			cursor: pointer
+	
+	&_right
+		width: 435px
+		height: 500px
+		border: 20px solid $yellows
+
+	&_img
+		background: url('../img/recom_bav.jpg') center no-repeat
+		background-size: cover
+		height: 500px
+		width: 435px
+		position: absolute
+		bottom: 0
+		right: 0
+		z-index: 3
+		img
+			position: absolute
+			bottom: 0
+			left: 0
+			z-index: 2
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			z-index: -1
+			height: 100%
+			background-image: linear-gradient(180deg, transparent 0%, rgba($yellows, 0.9) 100%)
+
+
+@media (max-width: 1199.98px)
+	.recom
+		&_img
+			height: 100%
+			width: 100%
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 2
+		&_right
+			width: 100%
+			height: 100%
+
+@media (max-width: 991.98px)
+	.recom
+		padding: 80px 0
+		padding-top: 0
+		&_bg
+			margin-bottom: 50px
+		&_img
+			position: relative
+			height: 420px
+			width: 100%
+			&::after
+				display: none
+		&_right
+			height: auto
+			width: auto
+			border: none
+
+@media (max-width: 575.98px)
+	.recom
+		padding: 55px 0
+		padding-top: 0
+		&_select
+			padding: 20px
+		&_option
+			input
+				padding-left: 10px
+				font-size: 14px

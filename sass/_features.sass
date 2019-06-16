@@ -1,0 +1,51 @@
+.features
+	padding: 100px 0
+	margin-top: -300px
+	z-index: 10
+	position: relative
+	&_info
+		padding: 30px
+		background-color: #fff
+		box-shadow: 0 1px 9px #bbb
+	&_img
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		min-height: 200px
+		&_1
+			background-image: url('../img/feat1.jpg')
+		&_2
+			background-image: url('../img/feat2.jpg')
+		&_3
+			background-image: url('../img/feat3.jpg')
+	&_title
+		color: $reds
+		font-size: 20px
+		letter-spacing: 0.6px
+		line-height: 1.2
+		margin-bottom: 30px
+	&_list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			padding-left: 20px
+			position: relative
+			margin-bottom: 15px
+			color: #8d8d8d
+			font-weight: 300
+			&:last-child
+				margin-bottom: 0
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				border: 6px solid transparent
+				border-left: 8px solid $yellows
+
+@media (max-width: 767.98px)
+	.features
+		&_item
+			margin: 20px 0

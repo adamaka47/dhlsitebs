@@ -1,0 +1,39 @@
+.company
+	padding: 70px 0
+	&_item
+		border: 2px solid #eedbdb
+		padding: 0 20px
+		transition: border-color 0.4s
+		&:hover
+			border-color: $reds
+	&_img
+		background-position: center
+		background-size: contain
+		background-repeat: no-repeat
+		height: 125px
+		width: 100%
+		&_1
+			background-image: url('../img/comp1.png')
+		&_2
+			background-image: url('../img/comp2.png')
+		&_3
+			background-image: url('../img/comp3.png')
+		&_4
+			background-image: url('../img/comp4.png')
+
+
+@media (max-width: 991.98px)
+	.company
+		&_item
+			padding: 0 10px
+
+@media (max-width: 767.98px)
+	.company
+		&_item
+			margin: 20px 0
+			padding: 0 60px
+
+@media (max-width: 575.98px)
+	.company
+		&_item
+			padding: 0 20px
